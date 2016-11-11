@@ -1,0 +1,214 @@
+<div class="header">
+	<div class="header_top">
+		<div class="wrap">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" /></a>
+			</div>
+
+			<app-navigation></app-navigation>
+
+
+			<div class="clear"> </div>
+		</div>
+	</div>
+	<div class="header_bottom phone-slogan">
+		<div class="wrap">
+			<div class="header-phone">
+				<h2><img src="images/phone.png" alt="" />{{cellNumber}}</h2>
+				<h4>{{address}}</h4>
+				<span class="triangle-arrow">&nbsp;</span>
+			</div>
+			<div class="header-tagline">
+				<h3><img src="images/clock.png" alt="" />Timmings : <span>{{timings}}</span></h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!---End-header--->
+<!---start-content---->
+<div class="wrap">
+	<div class="content">
+		<div class="project-top-patination">
+			<ul>
+				<li><a href="index.html">Mainpage</a></li>
+				<li>
+					<p>About</p>
+				</li>
+			</ul>
+		</div>
+		<div class="about-topgrid1">
+			<h3>{{headingFirst}}</h3>
+			<img [src]="imgFirstCol" title="name" alt="" />
+			<h4>{{heading2FirstCol}}</h4>
+			<p>{{para1FirstCol}}</p>
+			<p>{{para2FirstCol}}</p>
+		</div>
+		<div class="about-histore">
+			<h3>{{headingSecond}}</h3>
+			<div class="historey-lines">
+				<ul>
+					<li><span>{{col2year1}} &nbsp;-</span></li>
+					<li>
+						<p>{{col2Para1}}</p>
+					</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<div class="historey-lines">
+				<ul>
+					<li><span>{{col2year2}} &nbsp;-</span></li>
+					<li>
+						<p>{{col2Para2}}</p>
+					</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<div class="historey-lines">
+				<ul>
+					<li><span>{{col2year3}} &nbsp;-</span></li>
+					<li>
+						<p>{{col2Para3}}</p>
+					</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<div class="historey-lines">
+				<ul>
+					<li><span>{{col2year4}} &nbsp;-</span></li>
+					<li>
+						<p>{{col2Para4}}</p>
+					</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<div class="historey-lines">
+				<ul>
+					<li><span>{{col2year5}} &nbsp;-</span></li>
+					<li>
+						<p>{{col2Para5}}</p>
+					</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		<div class="about-services">
+			<h3>{{headingThird}}</h3>
+			<h4>{{col3subHeading}}</h4>
+			<p>{{col3para1}}</p>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/marker.png"> consectetur adipisicing elit
+					</a>
+				</li>
+				<div class="clear"> </div>
+			</ul>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="wrap">
+		<div class="section group">
+			<div class="col_1_of_4 span_1_of_4">
+				<h3>Follow Us</h3>
+				<div class="social-icons">
+					<ul>
+						<li>
+							<a [href]="fbLink" target="_blank"><img src="images/facebook.png" title="facebook"></a>
+						</li>
+						<li>
+							<a [href]="twitterLink" target="_blank"><img src="images/twitter.png" title="Twiiter"></a>
+						</li>
+						<!--<li>
+							<a href="#"><img src="images/rss.png" title="Rss"></a>
+						</li>-->
+						<li>
+							<a [href]="gPlusLink" target="_blank"><img src="images/gpluse.png" title="Google+"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="location">
+					<h3>Location</h3>
+					<ul>
+						<li>{{cellNumber}},</li>
+						<li>{{address}}</li>
+						<!--<li>dolor sit amet,</li>
+						<li>USA.</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h3>Information</h3>
+				<p>{{information}}
+					<br>
+					<!--<span><a href="#">Read More[....]</a></span>-->
+				</p>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h3>Message</h3>
+				<div class="Testimonials_desc">
+					<p><span class="up"><img src="images/quotes.png" alt="">
+					</span>{{messageDesc}}
+						<span class="down">
+							<img src="images/quotes-down.png" alt="">
+							</span>
+					</p>
+					<h5>- {{messageFrom}}</h5>
+				</div>
+			</div>
+			<div class="col_1_of_4 span_1_of_4">
+				<h3>Contact Us</h3>
+				<ul class="address">
+					<li>{{emailTo}}</li>
+					<li><span>Mobile :</span> {{cellNumber}}</li>
+					<li><span>Telephone :</span> {{teleLandLine}}</li>
+					<li><span>Fax :</span> {{fax}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--<div class="copy-right">
+		<div class="wrap">
+			<p class="company_name">Company Name &copy; 2013 All Rights Reseverd</p>
+			<p class="design">Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+			<div class="clear"></div>
+		</div>
+	</div>-->
+</div>
